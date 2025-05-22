@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import profilePic from "../assets/profile.png";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
+import { Link } from 'react-scroll';
 
 function HeroSection() {
   return (
@@ -59,13 +60,17 @@ function HeroSection() {
 
           {/* Buttons */}
           <div className="flex flex-wrap items-center gap-5 justify-center md:justify-start">
-            <a
-              href="#about"
-              className="bg-blue-600 px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-400 transition transform hover:scale-105"
-              aria-label="Learn more About Me"
-            >
-              About Me
-            </a>
+          
+<Link
+  to="about"
+  smooth={true}
+  duration={500}
+  offset={-80} // adjust if you have a fixed header
+  className="bg-blue-600 px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-400 transition transform hover:scale-105 cursor-pointer"
+  aria-label="Learn more About Me"
+>
+  About Me
+</Link>
             <a
               href="/Asrar_Uddin_Resume.pdf"
               download

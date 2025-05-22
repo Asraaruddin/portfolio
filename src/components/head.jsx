@@ -25,13 +25,14 @@ function Header() {
         <ul className="hidden md:flex space-x-6 text-white font-medium">
           {navItems.map(({ id, label }) => (
             <li key={id}>
-             <Link
+            <Link
   to={id}
   smooth={true}
   spy={true}
-  hashSpy={false}  // ✅ Add this line
   offset={-80}
   duration={500}
+  hashSpy={false} // 👈 prevents updating the URL hash
+  isDynamic={true}
   className="cursor-pointer hover:text-yellow-300"
   activeClass="text-yellow-300 font-semibold"
 >
