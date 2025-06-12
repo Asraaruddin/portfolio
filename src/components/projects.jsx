@@ -3,9 +3,9 @@ import React, { useEffect } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import feedbackImg from "../assets/feedback.jpeg";
-import todoImg from "../assets/todo.jpeg";
-import weatherImg from "../assets/weather.jpeg";
+import habitTracker from "../assets/Habittracker.png";
+import mernchatapp from "../assets/mernchatapp.png";
+
 
 
 
@@ -15,37 +15,29 @@ function Projects() {
   }, []);
 
   const projects = [
-    {
-      title: "Feedback Form",
-      description: "A form with validation and real-time feedback using React Hooks.",
-      tech: ["React", "Bootstrap", "Hooks"],
-      github: "https://github.com/Asraaruddin/react-learning",
-      live: "#",
-      thumbnail: feedbackImg,
-      type: "Mini",
-      duration: "Jan 2024",
-    },
-    {
-      title: "ToDo App",
-      description: "A simple to-do list app with persistent state using localStorage.",
-      tech: ["React", "CSS", "JavaScript"],
-      github: "#",
-      live: "#",
-      thumbnail: todoImg,
-      type: "Mini",
-      duration: "Feb 2024",
-    },
-    {
-      title: "Weather App (WIP)",
-      description: "Fetches and displays weather data from an API. Currently in development.",
-      tech: ["React", "API", "useEffect"],
-      github: "#",
-      live: "#",
-      thumbnail: weatherImg,
-      type: "Major",
-      duration: "Ongoing",
-    },
-  ];
+  {
+    title: "MERN Chat App",
+    description: "A real-time chat application with authentication, group chat, and notifications using MERN stack and Chakra UI.",
+    tech: ["MongoDB", "Express", "React", "Node.js", "Chakra UI", "Socket.IO"],
+    github: "https://github.com/Asraaruddin/MERN-Chat-app",
+    live: "https://talkify-5m26.onrender.com/",
+    thumbnail: mernchatapp,
+    type: "Major",
+    duration: "May 2024",
+  },
+  {
+    title: "Habit Tracker (Zustland)",
+    description: "A responsive habit tracker built with Zustand for state management and Tailwind CSS for UI styling.",
+    tech: ["React", "Zustand", "Tailwind CSS"],
+    github: "https://github.com/Asraaruddin/Zustland-Practice",
+    live: "https://habittrackerzustland.netlify.app/",
+    thumbnail: habitTracker,
+    type: "Mini",
+    duration: "March 2024",
+  },
+  // ...keep your other existing projects here
+];
+
 
   const grouped = {
     Major: projects.filter((p) => p.type === "Major"),
