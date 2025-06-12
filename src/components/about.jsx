@@ -19,31 +19,33 @@ function About() {
           <div>
             <p className="text-lg leading-relaxed mb-6">
               Hello! I'm{" "}
-              <span className="text-blue-400 font-semibold">Asrar Uddin</span>, a passionate and detail-oriented front-end developer based in Hyderabad, India.
+              <span className="text-blue-400 font-semibold">Asrar Uddin</span>, a passionate and detail-driven MERN stack developer based in Hyderabad, India.
             </p>
 
             <p className="text-lg leading-relaxed mb-4">
-              I specialize in building dynamic, accessible, and responsive web applications using:
+              As a front-end enthusiast and growing full-stack developer, I enjoy building scalable, responsive, and user-friendly web applications using the modern JavaScript ecosystem. I take pride in clean architecture, reusable components, and seamless user experiences.
             </p>
 
             <ul className="list-disc list-inside text-gray-300 mb-8 space-y-2">
               <li>
-                <strong>React.js</strong> – component-based architecture and modern best practices
+                <strong>Frontend:</strong>React.js (Hooks, Context API), JavaScript (ES6+), HTML5, CSS3
               </li>
               <li>
-                <strong>JavaScript (ES6+)</strong> – DOM manipulation and clean, modular code
+                <strong>Styling:</strong> Chakra UI, Bootstrap, Tailwind CSS
               </li>
               <li>
-                <strong>HTML5 & CSS3</strong> – semantic markup and responsive design
+                <strong>Backend:</strong>Node.js, Express.js
               </li>
               <li>
-                <strong>Bootstrap & Tailwind CSS</strong> – rapid and consistent UI development
+                <strong>Database:</strong>MongoDB (Mongoose)
+              </li>
+              <li>
+                <strong>Tools:</strong> Git, GitHub, Postman, VS Code
+              </li>
+              <li>
+                <strong>Deployment:</strong>Render, Vercel, Netlify
               </li>
             </ul>
-
-            <p className="text-base text-gray-300 mb-6">
-              I’m continuously expanding my skillset with advanced React features like Hooks, Context API, and performance optimization.
-            </p>
 
             <p className="text-base text-gray-300">
               Beyond coding, I value{" "}
