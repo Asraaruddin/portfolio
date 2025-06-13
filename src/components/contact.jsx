@@ -39,12 +39,13 @@ function Contact() {
 
     if (Object.keys(validationErrors).length === 0) {
       setLoading(true);
-      const templateParams = {
-  from_name: formData.name,
-  from_email: formData.email,
+     const templateParams = {
+  from_name: formData.from_name,
+  from_email: formData.from_email,
   subject: formData.subject,
   message: formData.message
 };
+
     emailjs.send(
   "YOUR_SERVICE_ID",
   "YOUR_TEMPLATE_ID",
