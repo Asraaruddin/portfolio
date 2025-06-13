@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -14,7 +14,7 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const validate = () => {
@@ -39,19 +39,14 @@ function Contact() {
 
     if (Object.keys(validationErrors).length === 0) {
       setLoading(true);
-     const templateParams = {
-  from_name: formData.from_name,
-  from_email: formData.from_email,
-  subject: formData.subject,
-  message: formData.message
-};
 
-    emailjs.send(
-  "YOUR_SERVICE_ID",
-  "YOUR_TEMPLATE_ID",
-  templateParams,
-  "YOUR_PUBLIC_KEY"
-)
+      emailjs
+        .send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          formData,
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
         .then(() => {
           alert("Thank you! Your message has been sent.");
           setFormData({ from_name: "", from_email: "", subject: "", message: "" });
