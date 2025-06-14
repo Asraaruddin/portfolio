@@ -35,11 +35,3 @@ Welcome to my personal portfolio website! Built using **React** and **TailwindCS
 - PostCSS & Autoprefixer
 - GitHub Pages / Vercel (for deployment)
 
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/my-portfolio.git
-cd my-portfolio
