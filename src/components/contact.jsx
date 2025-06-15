@@ -16,12 +16,13 @@ const Contact = () => {
     const publicKey = 'ODcTOKx6QyT7ZCcIn';
 
     // Create a new object that contains dynamic template params
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: 'asraruddin000@gmail.com',
-      message: message,
-    };
+  const templateParams = {
+  from_name: name,                // ✅ required for subject
+  from_email: email,
+  to_name: 'Asrar',
+  message: message,
+};
+
 
     // Send the email using EmailJS
     emailjs.send(serviceId, templateId, templateParams, publicKey)
