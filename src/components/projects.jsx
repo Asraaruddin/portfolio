@@ -33,7 +33,6 @@ function Projects() {
       type: "Mini",
       duration: "March 2024",
     },
-    // Add more projects if needed
   ];
 
   const grouped = {
@@ -42,8 +41,8 @@ function Projects() {
   };
 
   return (
-    <section className="bg-gray-950 text-white py-12 px-4" id="projects">
-      <div className="max-w-7xl mx-auto">
+    <section id="projects" className="text-white bg-gray-950 py-12 px-4">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-10">
           <span className="text-blue-400">My</span> Projects
         </h2>
@@ -51,25 +50,23 @@ function Projects() {
         {Object.keys(grouped).map((group) => (
           <div key={group} className="mb-16">
             <h3 className="text-2xl font-semibold mb-6">{group} Projects</h3>
-            <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {grouped[group].map((proj, index) => (
                 <div
                   key={index}
                   data-aos="fade-up"
-                  className="w-full max-w-md mx-auto bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/40 transition duration-300"
+                  className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/40 transition duration-300"
                 >
                   <img
                     src={proj.thumbnail}
                     alt={proj.title}
-                    className="w-full h-40 object-cover rounded-t-xl"
+                    className="w-full h-40 object-cover"
                   />
                   <div className="p-5">
                     <h4 className="text-xl font-bold mb-2">{proj.title}</h4>
                     <p className="text-sm text-gray-300 mb-3">{proj.description}</p>
-                    <p className="text-xs text-gray-400 mb-3">
-                      Duration: {proj.duration}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <p className="text-xs text-gray-400 mb-3">Duration: {proj.duration}</p>
+                    <div className="flex flex-wrap gap-2 mb-3">
                       {proj.tech.map((tech, i) => (
                         <span
                           key={i}
