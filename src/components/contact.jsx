@@ -44,7 +44,7 @@ const Contact = () => {
   return (
   
 
-  <section className="bg-[#1f2937] text-white py-12 px-4">
+  <section   id="contact"  className="bg-[#1f2937] text-white py-12 px-4">
     <div className="max-w-4xl mx-auto">
       <form
         onSubmit={handleSubmit}

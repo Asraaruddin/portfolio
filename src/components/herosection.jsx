@@ -79,13 +79,7 @@ function HeroSection() {
             >
               Download Resume
             </a>
-            <a
-              href="#contact"
-              className="underline text-white hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
-              aria-label="Contact Me"
-            >
-              Contact Me
-            </a>
+          
           </div>
 
           {/* Social Icons */}

@@ -46,14 +46,16 @@ function Projects() {
 
   return (
     <section className="text-white py-12 px-4 bg-gray-950" id="projects">
-      <h2 className="text-4xl font-bold text-center mb-10">
+      
+      <div className="max-w-7xl mx-auto">
+<h2 className="text-4xl font-bold text-center mb-10">
         <span className="text-blue-400">My</span> Projects
       </h2>
 
       {Object.keys(grouped).map((group) => (
         <div key={group} className="mb-12">
           <h3 className="text-2xl font-semibold mb-6">{group} Projects</h3>
-          <div className="grid md:grid-cols-3 gap-6">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {grouped[group].map((proj, index) => (
               <div
                 key={index}
@@ -61,9 +63,9 @@ function Projects() {
                 className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/40 transition duration-300"
               >
                 <img
-                  src={proj.thumbnail}
-                  alt={proj.title}
-                  className="w-full h-40 object-cover"
+                src={proj.thumbnail}
+                alt={proj.title}
+                className="w-full h-40 object-cover rounded-t-xl"
                 />
                 <div className="p-5">
                   <h4 className="text-xl font-bold mb-1">{proj.title}</h4>
@@ -103,6 +105,8 @@ function Projects() {
           </div>
         </div>
       ))}
+</div>
+
     </section>
   );
 }
