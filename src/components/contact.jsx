@@ -42,55 +42,60 @@ const Contact = () => {
   }
 
   return (
-   <form
-  onSubmit={handleSubmit}
-  className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left bg-[#1f2937] text-white p-6 rounded-lg max-w-4xl mx-auto"
->
-  <div>
-    <input
-      type="text"
-      name="from_name"
-      placeholder="Your Name"
-      value={name}
-      onChange={(e) => setName(e.target.value)}
-      className="p-3 w-full rounded bg-gray-800 border border-gray-600"
-      required
-    />
-  </div>
-  <div>
-    <input
-      type="email"
-      name="from_email"
-      placeholder="Your Email"
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-      className="p-3 w-full rounded bg-gray-800 border border-gray-600"
-      required
-    />
-  </div>
-  <div className="md:col-span-2">
-    <textarea
-      name="message"
-      placeholder="Your Message"
-      rows="4"
-      value={message}
-      onChange={(e) => setMessage(e.target.value)}
-      className="p-3 w-full rounded bg-gray-800 border border-gray-600"
-      required
-    ></textarea>
-  </div>
-  <button
-    type="submit"
-    className={`bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded md:col-span-2 transition duration-300 ${
-      loading ? "opacity-50 cursor-not-allowed" : ""
-    }`}
-    disabled={loading}
-  >
-    {loading ? "Sending..." : "Send Message"}
-  </button>
-</form>
+  
 
-  )
+  <section className="bg-[#1f2937] text-white py-12 px-4">
+    <div className="max-w-4xl mx-auto">
+      <form
+        onSubmit={handleSubmit}
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left p-6 rounded-lg bg-gray-900"
+      >
+        <div>
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="p-3 w-full rounded bg-gray-800 border border-gray-600"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            name="from_email"
+            placeholder="Your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="p-3 w-full rounded bg-gray-800 border border-gray-600"
+            required
+          />
+        </div>
+        <div className="md:col-span-2">
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="p-3 w-full rounded bg-gray-800 border border-gray-600"
+            required
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          className={`bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded md:col-span-2 transition duration-300 ${
+            loading ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+          disabled={loading}
+        >
+          {loading ? "Sending..." : "Send Message"}
+        </button>
+      </form>
+    </div>
+  </section>
+);
 }
 
 export default Contact
