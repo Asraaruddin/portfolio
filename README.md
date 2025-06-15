@@ -30,8 +30,4 @@ Welcome to my personal portfolio website! Built using **React** and **TailwindCS
 - EmailJS
 - React Icons, Lucide Icons
 
-**Dev Tools:**
-- ESLint
-- PostCSS & Autoprefixer
-- GitHub Pages / Vercel (for deployment)
 
