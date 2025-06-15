@@ -6,9 +6,11 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true); // <-- set loading to true
 
     // Your EmailJS service ID, template ID, and Public Key
     const serviceId = 'service_f47xww9';
@@ -31,9 +33,11 @@ const Contact = () => {
         setName('');
         setEmail('');
         setMessage('');
+         setLoading(false); // <-- reset loading
       })
       .catch((error) => {
         console.error('Error sending email:', error);
+        setLoading(false); // <-- reset loading
       });
   }
 
