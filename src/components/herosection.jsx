@@ -108,19 +108,24 @@ function HeroSection() {
         </motion.div>
 
         {/* Right image */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="md:w-1/2 flex justify-center"
-        >
-          <img
-            src={profilePic}
-            alt="Asrar Uddin Profile"
-            className="w-64 h-64 rounded-full shadow-2xl border-4 border-blue-400 object-cover transform transition duration-500 hover:scale-105 hover:-translate-y-1"
-            loading="lazy"
-          />
-        </motion.div>
+       <motion.div
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  className="md:w-1/2 flex justify-center"
+>
+  <div className="relative border border-blue-600 shadow-md rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 p-1 transition-all duration-300 hover:shadow-lg hover:border-blue-400">
+    <img
+      src={profilePic}
+      alt="Asrar Uddin Profile"
+      className="w-72 h-72 sm:w-80 sm:h-80 object-cover rounded-md"
+      loading="lazy"
+    />
+  </div>
+</motion.div>
+
+
+
       </div>
 
      
