@@ -71,14 +71,15 @@ function HeroSection() {
 >
   About Me
 </Link>
-            <a
-              href="/Asrar_Uddin_Resume.pdf"
-              download
-              className="border border-blue-500 text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-400 transition transform hover:scale-105"
-              aria-label="Download Resume"
-            >
-              Download Resume
-            </a>
+           <a
+  href="/Asrar_Uddin_Resume.pdf"
+  download
+  className="border border-blue-500 text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-400 transition transform hover:scale-105"
+  aria-label="Download Resume"
+>
+  Download Resume
+</a>
+
           
           </div>
 
