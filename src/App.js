@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
 import './index.css';
 import Header from './components/head';
