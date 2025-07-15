@@ -31,15 +31,15 @@ function HeroSection() {
           className="md:w-1/2 text-center md:text-left space-y-6"
         >
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
-            Hi, I'm <span className="text-blue-400">Asrar Uddin</span>
+            Hi, I'm <span className="text-blue-300">Asrar Uddin</span>
             <br />
             a{" "}
             <ReactTyped
               className="text-blue-400"
               strings={[
                 "Full Stack Web Developer",
-                "React Enthusiast",
-                "JavaScript Expert",
+                "Frontend Developer",
+                "MERN Stack Developer",
               ]}
               typeSpeed={60}
               backSpeed={40}
@@ -71,15 +71,14 @@ function HeroSection() {
 >
   About Me
 </Link>
-           <a
-  href="/Asrar_Uddin_Resume.pdf"
-  download
-  className="border border-blue-500 text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-400 transition transform hover:scale-105"
-  aria-label="Download Resume"
->
-  Download Resume
-</a>
-
+            <a
+              href="/Asrar_Uddin_Resume.pdf"
+              download
+              className="border border-blue-500 text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-400 transition transform hover:scale-105"
+              aria-label="Download Resume"
+            >
+              Download Resume
+            </a>
           
           </div>
 

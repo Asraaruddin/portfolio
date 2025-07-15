@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import habitTracker from "../assets/Habittracker.png";
 import mernchatapp from "../assets/mernchatapp.png";
+import carrental from "../assets/carrental.png"; 
 
 function Projects() {
   useEffect(() => {
@@ -23,21 +23,20 @@ function Projects() {
       duration: "May 2024",
     },
     {
-      title: "Habit Tracker (Zustland)",
+      title: "Car Rental Platform",
       description:
-        "A responsive habit tracker built with Zustand for state management and Tailwind CSS for UI styling.",
-      tech: ["React", "Zustand", "Tailwind CSS"],
-      github: "https://github.com/Asraaruddin/Zustland-Practice",
-      live: "https://habittrackerzustland.netlify.app/",
-      thumbnail: habitTracker,
-      type: "Mini",
-      duration: "March 2024",
+        "A responsive car rental web app with real-time availability, role-based dashboards, and booking features using the MERN stack and Tailwind CSS.",
+      tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+      github: "https://github.com/Asraaruddin/car-rental-booking-app",
+      live: "https://luxcarrental.vercel.app/",
+      thumbnail: carrental,
+      type: "Major",
+      duration: "June 2024",
     },
   ];
 
   const grouped = {
     Major: projects.filter((p) => p.type === "Major"),
-    Mini: projects.filter((p) => p.type === "Mini"),
   };
 
   return (

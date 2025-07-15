@@ -8,7 +8,6 @@ import Footer from './components/footer';
 import HeroSection from './components/herosection';
 import Contact from './components/contact';
 import Projects from './components/projects';
-import { Divide } from 'lucide-react';
 import Skills from './components/skills';
 
 function App() {
